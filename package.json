@@ -61,10 +61,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shweshi/concealer.git"
+    "url": "git+https://github.com/shweshi/email-concealer.git"
   },
   "bugs": {
-    "url": "https://github.com/shweshi/concealer/issues"
+    "url": "https://github.com/shweshi/email-concealer/issues"
   },
-  "homepage": "https://github.com/shweshi/concealer#readme"
+  "homepage": "https://github.com/shweshi/email-concealer#readme"
 }
