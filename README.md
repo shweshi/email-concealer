@@ -8,7 +8,7 @@ It removes the domain and append the local part with example.org. Concealer can 
 
 # Installation
 ```bash
-npm install concealer --save
+npm install email-concealer --save
 ```
 
 # Usage
