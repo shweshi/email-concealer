@@ -6,6 +6,8 @@ Inspired by: https://github.com/spatie/email-concealer
 
 It removes the domain and append the local part with example.org. Concealer can idenfity if there are more than one same local part than it will increment the count and append it.
 
+[![NPM](https://nodei.co/npm/email-concealer.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/email-concealer)
+
 # Installation
 ```bash
 npm install email-concealer --save
