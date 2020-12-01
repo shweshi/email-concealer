@@ -1,6 +1,6 @@
 {
   "name": "email-concealer",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "package to conceal the emails in dump files",
   "main": "./dist/src/Concealer.js",
   "types": "./dist/src/Concealer.d.ts",
@@ -12,9 +12,8 @@
     "test": "NODE_ENV=testing ./node_modules/.bin/_mocha --timeout 10000 -r ts-node/register -r tsconfig-paths/register tests/**/**.test.ts",
     "coverage": "nyc npm run test",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
+    "prepublishOnly": "npm run test",
+    "version": "git add . && git commit",
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
