@@ -3,10 +3,19 @@
   "version": "1.0.0",
   "description": "package to conceal the emails in dump files",
   "main": "./dist/src/Concealer.js",
+  "types": "./dist/src/Concealer.d.ts",
+  "bin": {
+    "email-concealer": "./bin/index.js"
+  },
   "scripts": {
     "build": "tsc && tspath -f",
     "test": "NODE_ENV=testing ./node_modules/.bin/_mocha --timeout 10000 -r ts-node/register -r tsconfig-paths/register tests/**/**.test.ts",
-    "coverage": "nyc npm run test"
+    "coverage": "nyc npm run test",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "devDependencies": {
     "@types/node": "^11.10.4",
@@ -58,7 +67,9 @@
   },
   "author": "Shashi Prakash Gautam <contactmespg@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "yargs": "^16.1.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shweshi/email-concealer.git"

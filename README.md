@@ -28,6 +28,23 @@ concealer.conceal(string);
 // hi alex@example.org and alex-1@example.org
 ```
 
+### Using cli
+
+You can use the email-concealer command line interface (cli)
+
+```
+Commands:
+
+email-concealer --help
+email-concealer --version
+email-concealer conceal --file [filepath] --domain [domain]
+```
+
+Example:
+```
+email-concealer conceal --file ./users.sql --domain example.org
+```
+
 ### Testing
 
     npm test

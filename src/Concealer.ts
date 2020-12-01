@@ -1,12 +1,13 @@
 export default class Concealer {
     private readonly dictionary: object;
-    private readonly domain: string;
+    private domain: string;
     constructor() {
         this.dictionary = {};
         this.domain = 'example.org';
     }
 
-    public conceal = (string: string): string => {
+    public conceal = (string: string, domain: string = 'example.org'): string => {
+        this.domain = domain;
         const extractedEmails = this.extractEmails(string);
         const concealedEmails = this.fill(extractedEmails);
         for (const originalEmail in concealedEmails) {
