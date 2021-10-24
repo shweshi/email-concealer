@@ -1,4 +1,4 @@
-# Email-Concealer
+# email-concealer
 
 This package conceals the email in a string with example.org, this can be used to conceal the emails in sql dumps.
 
