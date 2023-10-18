@@ -1,6 +1,6 @@
 # email-concealer
 
-This package conceals the email in a string with example.org, this can be used to conceal the emails in sql dumps.
+This package conceals the email part in a string with example.org, this can be used to conceal the emails in sql dumps.
 
 Inspired by: https://github.com/spatie/email-concealer
 
